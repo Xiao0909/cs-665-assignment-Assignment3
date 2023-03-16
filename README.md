@@ -1,16 +1,15 @@
 
 | CS-665       | Software Design & Patterns |
 |--------------|----------------------------|
-| Name         | FIRST_NAME LAST_NAME       |
-| Date         | MM/DD/YYYY                 |
-| Course       | Fall / Spring / Summer     |
+| Name         | Xiao Xiao       |
+| Date         | 03/15/2023                 |
+| Course       | Spring                     |
 | Assignment # |                            |
 
 # Assignment Overview
-Please add a paragraph or two overviewing the objectives of the assignment.
-
+I used Factory Pattery to design a automatically email generator which will generate personalized emails for different types of customers. I have created seperate classes for each customer type and customer interface. The interface required methoes for getting the name, email and segments of the customers. Then the emailFactory class will responsible for generating unique email text for each customer type. Main class is used to demonstrate the functionality of the application. And I use the emailFactoryTest class to test the functionality in emailFactory.
 # GitHub Repository Link:
-https://github.com/{YOUR_USERNAME}/cs-665-assignment-{ASSIGNMENT_NUMBER}
+https://github.com/Xiao0909/cs-665-assignment-Assignment3
 
 # Implementation Description 
 
@@ -19,12 +18,23 @@ For each assignment, please answer the following:
 
 - Explain the level of flexibility in your implementation, including how new object types can
 be easily added or removed in the future.
+
+Answer: This application is designed with a flexible architecture. Users are allowed to easily add new customer type(segments) by implementing the interface. Or the old customer type can be removed by deleting the corresponding classes and updating the emailFactorty class. This will minimize the impact on existing code and make it easy to maitin or modify the application as the business requirement chanced.
+
 - Discuss the simplicity and understandability of your implementation, ensuring that it is
 easy for others to read and maintain.
+
+Answer: The implementation in the "Email Generator" is designed to be easy to understand. The rule of naming objects, methods and each class is clear and understandable. People who is reading the code is tend to understand what the class, object or method for once they saw te name. Also, the use of the factory design pattern will help to separate concerns and make the code more maintainable.
+
 - Describe how you have avoided duplicated code and why it is important.
+
+Answer: I used the interface to define ommon behavior of all customer types and then created sperate classes to implement that interface for each customer type(segments). I also use the factory pattern to centralize the email generator logic. This allowes me to reduce the code duplication and increases the mainainability.
+Avoid duplicated code could alos avoid increasing code complexity, longer time on developing the code and  increasing budget. Avoid duplication can increase the quality of the code and reduce the risk of the appearance of the bugs.
+
 - If applicable, mention any design patterns you have used and explain why they were
 chosen.
 
+Answer: I used the factory design pattern. This will allow developers add or remove the users easilty in the future and reduces the coupling between the client code and email creation logic. Factory design pattern will help improve the code more maintainable, scalable and flexible.
 
 # Maven Commands
 
