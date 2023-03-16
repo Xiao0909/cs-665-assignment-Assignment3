@@ -1,3 +1,10 @@
+/**
+ * Name: Xiao Xiao
+ * Course: CS-665 Software Designs & Patterns
+ * Date: 3-15-2023
+ * File Name: emailFactory.java
+ * Description: This class represents a a emailFactory that generates personlized email message
+ */
 package edu.bu.met.cs665.emailGenerator;
 
 import edu.bu.met.cs665.emailGenerator.customer.customer;
@@ -11,6 +18,11 @@ public class emailFacotry {
         String greeting = "";
         String body = "";
         String signature = "";
+
+        /**
+         * create 3 strings greeting, body and signature
+         * under each customer type, generate customized context
+         */
 
         switch(segment){
             // Business case: generate business customer email
@@ -53,7 +65,7 @@ public class emailFacotry {
                         "\nBoston University CS665";
             break;
 
-            //null
+            //null or default
             default:
                 throw new IllegalArgumentException("Invalid customer segment.");
 
