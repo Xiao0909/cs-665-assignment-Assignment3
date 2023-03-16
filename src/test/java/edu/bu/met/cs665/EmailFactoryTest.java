@@ -1,3 +1,10 @@
+/**
+ * Name: Xiao Xiao
+ * Course: CS-665 Software Designs & Patterns
+ * Date: 3-15-2023
+ * File Name: EmailFactoryTest.java
+ * Description: This class is responsible for testing the email generator's result is what we created in emailFactory.java.
+ */
 package edu.bu.met.cs665;
 
 import java.util.concurrent.locks.AbstractOwnableSynchronizer;
@@ -11,7 +18,12 @@ import edu.bu.met.cs665.emailGenerator.customer.customer;
 import edu.bu.met.cs665.emailGenerator.customer.frequentCustomer;
 import edu.bu.met.cs665.emailGenerator.customer.returnCustomer;
 import static org.junit.Assert.assertEquals;
-
+/**
+*This class represents the Email Factory that generates personalized email messages
+*for different customer segments based on a base template.
+* The getEmail(Customer customer) method takes in a Customer object and returns the personalized email message
+*for the corresponding customer segment by calling the getEmail() method of the Customer object.
+*/
 
 public class EmailFactoryTest {
     @Test

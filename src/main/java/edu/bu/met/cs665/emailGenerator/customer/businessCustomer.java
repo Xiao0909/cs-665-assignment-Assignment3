@@ -1,3 +1,10 @@
+/**
+ * Name: Xiao Xiao
+ * Course: CS-665 Software Designs & Patterns
+ * Date: 3-15-2023
+ * File Name: businessCustomer.java
+ * Description: This class represents a business customer and implements the customer interface.
+ */
 package edu.bu.met.cs665.emailGenerator.customer;
 
 public class businessCustomer implements customer {
